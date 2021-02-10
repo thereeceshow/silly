@@ -1,5 +1,8 @@
 // 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
+// I added a customWeight and CustomTemp to give us control of the inputs
+// I added to the HTML for Weight and Temp
+
 const customName = document.getElementById('customname');
 const customWeight = document.getElementById('customweight');
 const customTemp = document.getElementById('customtemp');
@@ -61,7 +64,10 @@ function result() {
     newStory = newStory.replace('Bob',name);
 
   }
-
+// these if statements detect if an input is in the weight and temp fields
+// if so, it reassigns the custom value to the variable.  Because these variables are also
+// used in the conversion function, I had to create these variables outside the scop of this
+// function, thats why these don't say let, and the above does.
 
   if(customWeight.value !== '') {
     weight = customWeight.value;
