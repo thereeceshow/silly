@@ -86,8 +86,10 @@ function result() {
     // (xºF - 32)*(5/9) = yºC
     let cent = Math.round((temp - 32) * (5/9));
     // replace these values in the Story
-    newStory = newStory.replace('300 pounds',stone + ' stone');
-    newStory = newStory.replace('94º fahrenheit',cent + 'º centagrade');
+    newStory = newStory.replace(weight,stone);
+    newStory = newStory.replace('pounds','stone'); // I had to make two lines when I changed string to var
+    newStory = newStory.replace(temp,cent);
+    newStory = newStory.replace('fahrenheit','centigrade'); // I could get the centigrade to cat on the prev function, but I couldn't remove fahrenheit
     
 
 
