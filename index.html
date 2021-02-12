@@ -12,7 +12,7 @@
     body {
       margin: auto;
       font-family: helvetica, sans-serif;
-      width: 350px;
+      max-width: 450px;
       background-image: url('sillywalks.png'); 
       background-size: 350px;
     }
@@ -44,7 +44,7 @@
 
     .main {
       text-align: center;
-      width: 300px;
+      width: 80%;
       padding: 25px;
       margin: 10px;
       border: 3pt;
@@ -64,12 +64,15 @@
       font-size: 1.5rem;
       box-shadow: 3px 5px 6px rgb(61, 61, 61);
       text-shadow: 2px 2px 3.5px rgb(61, 61, 61);
-
+      max-width: 100%;
     }
 
     input {
       border-radius: 8pt;
-      background-color:hsla(207, 44%, 49%, 0.945)
+      background-color:hsla(207, 44%, 49%, 0.945);
+      max-width: 100%;
+      box-sizing: border-box;
+      resize: vertical;
     }
 
     .storyText {
