@@ -27,7 +27,7 @@ let temp = 94
 // These create the elements of our story.  The first string is always used.
 // The next arrays hold the values that will later be randomly selected.
 
-let storyText = 'It was ' + temp + 'º fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs ' + weight + ' pounds, and it was a hot day.';
+let storyText = 'It was ' + temp + 'º fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. John Cleese saw the whole thing, but was not surprised — :insertx: weighs ' + weight + ' pounds, and it was a hot day.';
 
 let insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
 
@@ -61,7 +61,7 @@ function result() {
   
   if(customName.value !== '') {
     let name = customName.value;
-    newStory = newStory.replace('Bob',name);
+    newStory = newStory.replace('John Cleese',name);
 
   }
 // these if statements detect if an input is in the weight and temp fields
