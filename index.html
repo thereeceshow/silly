@@ -10,6 +10,7 @@
     <style>
 
     body {
+      margin: auto;
       font-family: helvetica, sans-serif;
       width: 350px;
       background-image: url('sillywalks.png'); 
@@ -36,22 +37,18 @@
       visibility: hidden;
       border-radius: 25px;
       border: 3pt;
-      font-family: fantasy;
     }
 
     .main {
-      margin: auto;
-      width: 80%;
-      padding: 10px;
       text-align: center;
-      /* width: 300px; */
-      /* padding: 25px; */
-      /* margin: 10px; */
-      /* margin-left: 15%; */
+      width: 300px;
+      padding: 25px;
+      margin: 10px;
       border: 3pt;
       border-color: #4682b4;
-      background-color: hsla(0, 0%, 77%, 0.959);
+      background-color: hsla(0, 0%, 77%, 0.979);
       border-radius: 25pt;
+      box-shadow: 10px 15px 15px rgb(61, 61, 61);
     }
 
     button {
@@ -62,6 +59,8 @@
       font-weight: bolder;
       font-family: fantasy;
       font-size: 1.5rem;
+      box-shadow: 3px 5px 6px rgb(61, 61, 61);
+      text-shadow: 2px 2px 3.5px rgb(61, 61, 61);
 
     }
 
@@ -70,27 +69,58 @@
       background-color:hsla(207, 44%, 49%, 0.945)
     }
 
+    .storyText {
+      font-family: fantasy;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h1, h4 {
+      padding-top: 0pt;
+      padding-bottom: 0pt;
+      margin-top: 0pt;
+      margin-bottom: 0pt;
+      border: 0pt;
+      font-weight: bolder;
+      text-shadow: 3px 5px 6px rgb(61, 61, 61);
+
+    }
+
+    h5 {
+      text-decoration: underline;
+      font-size: 1em;
+    }
+
+    .topSpace {
+      margin-top: 18px;
+    }
 
     </style>
   </head>
 
   <body>
     <div class="main">
-    <div>
-      <label for="customname">Enter custom name:</label>
+      <h5>The Ministry of the Silly Walks Presents:</h5>
+      <h1 class="storyText topSpace">Stories</h1>
+      <h4 class="storyText">of the</h4>
+      <h1 class="storyText">Silliest</h1>
+    <div class="topSpace">
+      <label for="customname">Enter custom name:</label><br>
       <input id="customname" type="text" placeholder="Bob">
     </div>
     <div>
-      <label for="customweight">Enter Weight in Lbs</label>
+      <label for="customweight">Enter Weight in Lbs</label><br>
       <input id="customweight" type="text" placeholder="300">
     </div>
     <div>
-      <label for="customtemp">Enter Temp in Fº</label>
+      <label for="customtemp">Enter Temp in Fº</label><br>
       <input id="customtemp" type="text" placeholder="94">
     </div>
     <div>
-      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
-      <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+      <abbr title="Proper English"><label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk"></abbr>
+      <abbr title="Bloody Americans"><label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked></abbr>
     </div>
     <div>
       <button class="randomize">Generate Random Story</button>
